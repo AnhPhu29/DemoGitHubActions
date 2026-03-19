@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: nguyenanhphu-app
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_APPLICATION_NAME=nguyenanhphu
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+    
