@@ -1,4 +1,4 @@
-      - name: Triển khai lên DevOps Classroom
+      - name: Triển khai lên DevOps Classrooms
         run: |
           REPO="nguyenanhphu/nguyenanhphu"
           RESPONSE=$(curl -sS -w "\n%{http_code}" -X POST "${{ secrets.DEPLOY_URL }}?repo=$REPO&tag=latest&slot=1")
